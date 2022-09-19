@@ -41,8 +41,8 @@ class Document extends NextDocument<Props> {
           {process.env.NEXT_PUBLIC_GA_TRACKING_ID && (
             <>
               <script
-                async
                 src={`https://www.googletagmanager.com/gtag/js?id=${process.env.NEXT_PUBLIC_GA_TRACKING_ID}`}
+                defer
               />
               <script
                 dangerouslySetInnerHTML={{
@@ -53,6 +53,7 @@ class Document extends NextDocument<Props> {
                     gtag('config', '${process.env.NEXT_PUBLIC_GA_TRACKING_ID}');
                   `,
                 }}
+                defer
               />
             </>
           )}
