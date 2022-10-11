@@ -7,12 +7,10 @@ import { config } from "../lib/config";
 
 const Home: NextPage = () => {
   const [isLoading, setIsLoading] = useState(true);
-  const videoRef = useRef<HTMLVideoElement>(null);
 
   useEffect(() => {
     setTimeout(() => {
       setIsLoading(false);
-      videoRef.current?.play();
     }, 4000);
   }, []);
 
@@ -34,7 +32,8 @@ const Home: NextPage = () => {
           controls
           loop
           muted
-          ref={videoRef}
+          autoPlay
+          playsInline
         >
           <source src="/video.mp4" type="video/mp4" />
           {/* <source src={video_webm} type="video/webm" /> */}
