@@ -28,14 +28,8 @@ class Document extends NextDocument<Props> {
           <meta name="description" content={config.description} />
           <meta name="og:image" content={config.ogp} />
           <meta name="twitter:card" content="summary_large_image" />
-          <link rel="preconnect" href="https://fonts.googleapis.com" />
           <link
-            rel="preconnect"
-            href="https://fonts.gstatic.com"
-            crossOrigin="true"
-          />
-          <link
-            href="https://fonts.googleapis.com/css2?family=Zen+Antique+Soft&display=swap"
+            href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;700&display=swap&text=岡山大学祭201は終了しまたくさんのご来場ありがとうざい企画:校友会・実行委員制作電子計算機研究こちら"
             rel="stylesheet"
           />
           {process.env.NEXT_PUBLIC_GA_TRACKING_ID && (
