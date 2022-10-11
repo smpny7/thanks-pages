@@ -1,4 +1,5 @@
 import NextDocument, { Html, Head, Main, NextScript } from "next/document";
+import Script from "next/script";
 import { config } from "../lib/config";
 
 type Props = {};
@@ -34,11 +35,13 @@ class Document extends NextDocument<Props> {
           />
           {process.env.NEXT_PUBLIC_GA_TRACKING_ID && (
             <>
-              <script
+              <Script
+                strategy="afterInteractive"
                 src={`https://www.googletagmanager.com/gtag/js?id=${process.env.NEXT_PUBLIC_GA_TRACKING_ID}`}
-                defer
               />
-              <script
+              <Script
+                id="gtm"
+                strategy="afterInteractive"
                 dangerouslySetInnerHTML={{
                   __html: `
                     window.dataLayer = window.dataLayer || [];
@@ -47,7 +50,6 @@ class Document extends NextDocument<Props> {
                     gtag('config', '${process.env.NEXT_PUBLIC_GA_TRACKING_ID}');
                   `,
                 }}
-                defer
               />
             </>
           )}
