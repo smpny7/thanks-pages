@@ -29,14 +29,13 @@ const Home: NextPage = () => {
       >
         <video
           className="h-screen w-screen object-cover"
-          controls
           loop
           muted
           autoPlay
           playsInline
         >
+          <source src="/video.webm" type="video/webm" />
           <source src="/video.mp4" type="video/mp4" />
-          {/* <source src={video_webm} type="video/webm" /> */}
           <p>Your browser does not support HTML5 video.</p>
         </video>
       </div>
@@ -138,15 +137,25 @@ const Home: NextPage = () => {
           { hidden: !isLoading }
         )}
       >
-        <div className="w-40 relative">
-          <Image
+        <div className="w-40">
+          <video
+            className="h-full w-full object-cover"
+            muted
+            autoPlay
+            playsInline
+          >
+            <source src="/loading.webm" type="video/webm" />
+            <source src="/loading.mp4" type="video/mp4" />
+            <p>Your browser does not support HTML5 video.</p>
+          </video>
+          {/* <Image
             src="/loading.gif"
             height={540}
             width={462}
             layout="responsive"
             alt="loading..."
             priority
-          />
+          /> */}
         </div>
       </div>
     </div>

@@ -29,7 +29,7 @@ class Document extends NextDocument<Props> {
           <meta name="og:image" content={config.ogp} />
           <meta name="twitter:card" content="summary_large_image" />
           <link
-            href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;500;700&family=Roboto:wght@400;700&display=swap"
+            href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;700&display=swap&text=岡山大学祭201は終了しまたくさんのご来場ありがとうざい企画:校友会・実行委員制作電子計算機研究こちら"
             rel="stylesheet"
           />
           {process.env.NEXT_PUBLIC_GA_TRACKING_ID && (
