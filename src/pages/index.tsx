@@ -36,8 +36,8 @@ const Home: NextPage = () => {
           autoPlay
           playsInline
         >
-          <source src="/video.webm" type="video/webm" />
-          <source src="/video.mp4" type="video/mp4" />
+          <source src="/video/background.webm" type="video/webm" />
+          <source src="/video/background.mp4" type="video/mp4" />
           <p>Your browser does not support HTML5 video.</p>
         </video>
       </div>
@@ -48,7 +48,7 @@ const Home: NextPage = () => {
             <Link href="/" locale={linkLocale}>
               <a className="cursor-pointer">
                 <Image
-                  src="/language.svg"
+                  src="/svg/language.svg"
                   height={51.2}
                   width={64}
                   layout="responsive"
@@ -99,7 +99,7 @@ const Home: NextPage = () => {
               </span>
               <div className="relative w-7 sm:w-[45px] pt-1">
                 <Image
-                  src="/arrow-right.svg"
+                  src="/svg/arrow-right.svg"
                   height={29}
                   width={45}
                   layout="responsive"
@@ -124,8 +124,8 @@ const Home: NextPage = () => {
             autoPlay
             playsInline
           >
-            <source src="/loading.webm" type="video/webm" />
-            <source src="/loading.mp4" type="video/mp4" />
+            <source src="/video/loading.webm" type="video/webm" />
+            <source src="/video/loading.mp4" type="video/mp4" />
             <p>Your browser does not support HTML5 video.</p>
           </video>
         </div>
