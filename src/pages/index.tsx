@@ -6,12 +6,6 @@ import Link from "next/link";
 import { useEffect, useState } from "react";
 import { useLocale } from "../hooks/useLocale";
 
-declare global {
-  interface Window {
-    dataLayer: Record<string, unknown>[];
-  }
-}
-
 const Home: NextPage = () => {
   const { locale, linkLocale, t } = useLocale();
   const [isLoading, setIsLoading] = useState(true);
@@ -98,12 +92,6 @@ const Home: NextPage = () => {
 
             <a
               href="https://www.okayama-u.ac.jp/tp/event/event_id2979.html"
-              onClick={() =>
-                window.dataLayer.push({
-                  event: "fetch_random_images",
-                  fetch_random_images_trigger: "a_tag",
-                })
-              }
               className="bg-primary flex items-center justify-between h-14 sm:h-[77px] w-full lg:w-[422px] pl-6 sm:pl-10 pr-4 sm:pr-8 drop-shadow-[4px_4px_0_black] md:drop-shadow-[5px_5px_0_black]"
             >
               <span className="text-white font-bold sm:text-2xl md:text-[26px] tracking-wider">
