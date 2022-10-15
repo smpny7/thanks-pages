@@ -2,6 +2,10 @@
 const nextConfig = {
   reactStrictMode: true,
   swcMinify: true,
+  i18n: {
+    locales: ['en', 'ja'],
+    defaultLocale: 'ja',
+  },
 }
 
 const withBundleAnalyzer = require('@next/bundle-analyzer')({

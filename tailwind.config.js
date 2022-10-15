@@ -1,8 +1,7 @@
 /** @type {import('tailwindcss').Config} */
 module.exports = {
   content: [
-    './pages/**/*.{js,ts,jsx,tsx}',
-    './components/**/*.{js,ts,jsx,tsx}',
+    './src/pages/**/*.{js,ts,jsx,tsx}',
   ],
   theme: {
     extend: {
@@ -12,7 +11,7 @@ module.exports = {
         text: '#393939',
       },
       fontFamily: {
-        sans: ['"Noto Sans JP"', 'serif']
+        sans: ['"Noto Sans JP"', '"Libre Baskerville"', 'serif']
       }
     },
   },
