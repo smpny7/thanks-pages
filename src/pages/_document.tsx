@@ -55,6 +55,7 @@ class Document extends NextDocument<Props> {
                   })(window,document,'script','dataLayer','${process.env.NEXT_PUBLIC_GOOGLE_TAG_MANAGER_ID}');
                   `,
               }}
+              defer
             />
           )}
         </Head>
