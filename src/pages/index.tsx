@@ -60,14 +60,14 @@ const Home: NextPage = () => {
                   width={64}
                   layout="responsive"
                   className="opacity-50"
-                  alt="翻訳"
+                  alt={t.TRANSLATION_ALT}
                 />
               </a>
             </Link>
           </div>
           <div className="w-full pt-10">
             <h1
-              className="text-white/90 tracking-wider text-[40px] sm:text-[50px] md:text-[60px] font-bold whitespace-pre-wrap"
+              className="text-white/90 tracking-wider text-[40px] sm:text-[50px] md:text-[60px] font-bold whitespace-pre-wrap duration-500"
               style={{ textShadow: "0 0 15px black" }}
             >
               {t.TITLE}
@@ -111,7 +111,7 @@ const Home: NextPage = () => {
                   height={29}
                   width={45}
                   layout="responsive"
-                  alt="右矢印"
+                  alt={t.ARROW_RIGHT_ALT}
                 />
               </div>
             </a>

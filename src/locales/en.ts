@@ -4,6 +4,8 @@ const text = {
   PLANNER: "Alumni Association / School Festival Executive Committee",
   PRODUCER: "Produced by Okayama University Computer Research Club",
   BUTTON_LABEL: "School Festival 2022",
+  TRANSLATION_ALT: "Translate",
+  ARROW_RIGHT_ALT: "Arrow right",
 };
 
 export default text;
