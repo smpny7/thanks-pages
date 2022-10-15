@@ -5,7 +5,6 @@ import Image from "next/image";
 import Link from "next/link";
 import { useEffect, useState } from "react";
 import { useLocale } from "../hooks/useLocale";
-import { config } from "../lib/config";
 
 declare global {
   interface Window {
@@ -26,7 +25,7 @@ const Home: NextPage = () => {
   return (
     <div className="relative">
       <Head>
-        <title>{config.title}</title>
+        <title>笑顔満祭岡大祭 〜心機一転しちゃいな祭〜</title>
         <meta name="viewport" content="initial-scale=1.0, width=device-width" />
       </Head>
 
