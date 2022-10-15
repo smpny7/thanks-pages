@@ -6,5 +6,5 @@ export const useLocale = () => {
   const { locale } = useRouter();
   const t = locale === "ja" ? ja : en;
   const linkLocale = locale === "ja" ? "en" : "ja";
-  return { linkLocale, t };
+  return { locale, linkLocale, t };
 };

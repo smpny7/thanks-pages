@@ -14,7 +14,7 @@ declare global {
 }
 
 const Home: NextPage = () => {
-  const { linkLocale, t } = useLocale();
+  const { locale, linkLocale, t } = useLocale();
   const [isLoading, setIsLoading] = useState(true);
 
   useEffect(() => {
@@ -73,7 +73,12 @@ const Home: NextPage = () => {
               {t.TITLE}
             </h1>
 
-            <div className="mt-24 flex justify-end items-center">
+            <div
+              className={classNames(
+                "flex justify-end items-center",
+                locale === "jp" ? "mt-24" : "mt-10 md:mt-24"
+              )}
+            >
               <div className="bg-white/90 w-1/3 sm:w-1/2 md:w-[320px] h-[2px] drop-shadow-[2px_2px_0_rgba(0,0,0,0.5)] md:drop-shadow-[4px_4px_0_rgba(0,0,0,0.5)] mr-2" />
               <p
                 className="text-white/90 tracking-wider whitespace-pre-wrap sm:text-2xl md:text-[28px] text-right font-bold !leading-7 sm:!leading-10 md:!leading-[3rem]"
