@@ -7,7 +7,7 @@ import { useEffect, useState } from "react";
 import { useLocale } from "../hooks/useLocale";
 
 const Home: NextPage = () => {
-  const { locale, linkLocale, t } = useLocale();
+  const { locale, t } = useLocale();
   const [isLoading, setIsLoading] = useState(true);
 
   useEffect(() => {
@@ -45,20 +45,6 @@ const Home: NextPage = () => {
 
       <div className="absolute bottom-0 left-0 right-0 top-0 flex flex-col">
         <div className="grow px-8 w-full max-w-[1400px] mx-auto flex items-center relative">
-          <div className="absolute top-8 right-6 w-9 sm:w-10">
-            <Link href="/" locale={linkLocale}>
-              <a className="cursor-pointer">
-                <Image
-                  src="/svg/language.svg"
-                  height={51.2}
-                  width={64}
-                  layout="responsive"
-                  className="opacity-50"
-                  alt={t.TRANSLATION_ALT}
-                />
-              </a>
-            </Link>
-          </div>
           <div className="w-full pt-10">
             <h1
               className="text-white/90 tracking-wider text-[40px] sm:text-[50px] md:text-[60px] font-bold whitespace-pre-wrap duration-500"
