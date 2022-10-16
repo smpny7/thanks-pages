@@ -31,7 +31,7 @@ const Home: NextPage = () => {
       >
         <video
           className="h-screen w-screen object-cover"
-          poster="/video/background.webp"
+          poster="/video/background-poster.webp"
           loop
           muted
           autoPlay
@@ -121,7 +121,7 @@ const Home: NextPage = () => {
         <div className="w-40">
           <video
             className="h-full w-full object-cover"
-            poster="/video/loading.webp"
+            poster="/video/loading-poster.webp"
             muted
             autoPlay
             playsInline
