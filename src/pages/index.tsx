@@ -24,7 +24,7 @@ const Home: NextPage = () => {
 
       <div
         className={classNames(
-          "movie relative h-screen w-screen overflow-hidden duration-700",
+          "relative h-screen w-screen overflow-hidden duration-700 after:absolute after:top-0 after:right-0 after:block after:h-screen after:w-full after:bg-[rgba(0,_0,_0,_0.3)] after:bg-[radial-gradient(#111_30%,_transparent_31%),_radial-gradient(#111_30%,_transparent_31%)] after:bg-[length:4px_4px] after:bg-[position:0_0,_2px_2px] after:content-['']",
           isLoading ? "opacity-0" : "opacity-100"
         )}
       >
